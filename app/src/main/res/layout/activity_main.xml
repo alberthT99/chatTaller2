@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Cuadro de texto para los mensajes del chat -->
+    <TextView
+        android:id="@+id/chatWindow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#EFEFEF"
+        android:padding="10dp"
+        android:text="Chat: \n"
+        android:textSize="16sp"
+        android:scrollbars="vertical"/>
+
+    <!-- Primer campo de texto para el primer usuario -->
+    <EditText
+        android:id="@+id/inputUser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sebastian escribe aqui"/>
+
+    <!-- Botón para que el primer usuario envíe su mensaje -->
+    <Button
+        android:id="@+id/sendUser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"/>
+
+    <!-- Segundo campo de texto para el segundo usuario -->
+    <EditText
+        android:id="@+id/inputUser2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alberth escribe aqui"/>
+
+    <!-- Botón para que el segundo usuario envíe su mensaje -->
+    <Button
+        android:id="@+id/sendUser2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"/>
+
+</LinearLayout>
